@@ -23,7 +23,7 @@ import userRoutes from './routes/user.routes.js';
 
 const app = express();
 
-app.use(userRoutes)
+app.use(userRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on ${PORT}`);
