@@ -17,13 +17,3 @@ export const pool = new pg.Pool({
   idleTimeoutMillis: 30000,
   connectionTimeoutMillis: 2000,
 });
-
-console.log(PG_USER)
-
-try {
-  pool.query('SELECT NOW()').then((result) => {
-    console.log(result);
-  });
-} catch (error) {
-  console.log(error)
-}
