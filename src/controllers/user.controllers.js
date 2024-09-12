@@ -63,7 +63,7 @@ const createUser = async (req, res) => {
 
     if (existingCount > 0) {
       return res
-        .status(400)
+        .status(409)
         .json({ status: 'error', message: 'User already exists' });
     }
 
