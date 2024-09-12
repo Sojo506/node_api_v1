@@ -5,7 +5,7 @@ import {
   PG_PASSWORD,
   PG_PORT,
   PG_USER,
-} from './utils/consts.js';
+} from './config.js';
 
 export const pool = new pg.Pool({
   host: PG_HOST,
